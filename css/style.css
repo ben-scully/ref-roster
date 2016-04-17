@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#ground {
+  background-color: blue;
+  width: 500px;
+  height: 500px;
+}
+
+.field {
+  background: yellow;
+  height: 170px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.game {
+  background: red;
+  height: 100px;
+  margin: 10px;
+}

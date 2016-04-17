@@ -1,3 +1,4 @@
+"use strict"
 
 class Ref {
   constructor(name, level) {
@@ -6,4 +7,4 @@ class Ref {
   }
 }
 
-export class Ref
+module.exports = Ref
