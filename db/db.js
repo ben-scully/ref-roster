@@ -1,13 +1,6 @@
-// import Knex from 'knex'
-// import knexConfig from '../knexfile'
-var Knex = require( 'knex')
-var knexConfig = require( '../knexfile')
-var knex = Knex(knexConfig['development'])
+var knex = require('./knexObj')
 
-// export default function getAll () {
-//   return knex.select().table('refs')
-// }
-module.exports =  {
+module.exports = {
   getAll: function (tableName) {
     return knex.select().table(tableName)
   }

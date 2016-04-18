@@ -1,4 +1,3 @@
-
 import Ground from "./objs/ground"
 import Field from "./objs/field"
 import Game from "./objs/game"
@@ -11,13 +10,11 @@ import gameTemp from '.././views/game.jade'
 import teamTemp from '.././views/team.jade'
 import refTemp from '.././views/ref.jade'
 
-
 $(init)
 
 function init () {
-  
-}
 
+}
 
 function testPrint1 () {
   console.log("Running 'script.js' ...\n...\n")
@@ -32,14 +29,4 @@ function testPrint1 () {
   console.log(t.name)
   var r = new Ref("Brian", 3)
   console.log(r.name, r.level)
-}
-
-function testPrint2 () {
-  $('#ground').append(fieldTemp(f))
-  $('.field:last').append(gameTemp(gm))
-  $('.field:last').append(gameTemp(gm))
-
-  $('#ground').append(fieldTemp(f))
-  $('.field:last').append(gameTemp(gm))
-  $('.field:last').append(gameTemp(gm))
 }

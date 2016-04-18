@@ -1,8 +1,9 @@
 "use strict"
 
 class Ground {
-  constructor(name) {
+  constructor(name, numFields) {
     this.name = name
+    this.numFields = numFields
     this.fields = []
   }
 

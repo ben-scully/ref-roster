@@ -1,9 +1,8 @@
-
 module.exports = {
   entry: "./js/script.js",
   output: {
       path: __dirname,
-      filename: "/js/bundle.js"
+      filename: "/public/js/bundle.js"
   },
   module: {
     // preLoaders: [
@@ -23,7 +22,10 @@ module.exports = {
           presets: ['react', 'es2015']
         }
       },
-      { test: /\.jade$/, loader: "jade" }
+      {
+        test: /\.jade$/,
+        loader: "jade"
+      }
       // ,
       // { test: /\.css$/,
       //   loader: "style!css"
